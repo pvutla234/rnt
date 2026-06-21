@@ -1,4 +1,4 @@
-import { useUserStore } from '@/store/useStore';
+import { useUserStore } from '@/store/userStore';
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 
@@ -20,7 +20,7 @@ export default function TabLayout() {
         <Tabs.Screen name="saved" options={{ title: "Saved", tabBarIcon:({color, size})=>(
         <Ionicons name="heart" color={color} size={size} />) }} />
 
-         <Tabs.Screen name="profile" options={{ title: "Profile", tabBarIcon:({color, size})=>(
+        <Tabs.Screen name="profile" options={{ title: "Profile", tabBarIcon:({color, size})=>(
         <Ionicons name="person" color={color} size={size} />) }} />
       {/* <NativeTabs.Trigger name="index">
         <Label>Home</Label>
